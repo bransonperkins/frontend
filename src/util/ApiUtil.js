@@ -28,6 +28,7 @@ const request = (options) => {
   );
 };
 
+// export all the functions used to make API calls so they can be accessed in other react components 
 export function login(loginRequest) {
   return request({
     url: AUTH_SERVICE + "/signin",
