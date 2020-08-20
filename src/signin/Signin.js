@@ -3,7 +3,7 @@ import { Form, Input, Button, Divider, notification } from "antd";
 import {
   UserOutlined,
   LockOutlined,
-  DingtalkOutlined,
+  CommentOutlined,
   FacebookFilled,
 } from "@ant-design/icons";
 import { login, facebookLogin } from "../util/ApiUtil";
@@ -103,7 +103,7 @@ const Signin = (props) => {
 
   return (
     <div className="login-container">
-      <i class="fas fa-gamepad" style={{ fontSize: 50 }}></i>
+      <CommentOutlined style={{ fontSize: 50 }} />
       <Form
         name="normal_login"
         className="login-form"

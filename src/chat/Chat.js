@@ -15,7 +15,7 @@ import {
 import ScrollToBottom from "react-scroll-to-bottom";
 import "./Chat.css";
 import App from "../spotify/App";
-import { Button, Container, Col, Row, Badge } from "reactstrap";
+import { Container, Col, Row, Badge } from "reactstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 var stompClient = null;
@@ -233,13 +233,6 @@ const Chat = (props) => {
                         }}>
                       <i class="fa fa-paper-plane" aria-hidden="true"></i>{" "}
                     </button>
-                      {/* <Button
-                        icon={<i class="fa fa-paper-plane" aria-hidden="true"></i>}
-                        onClick={() => {
-                          sendMessage(text);
-                          setText("");
-                        }}
-                      /> */}
                     </div>
                   </div>
                 </div>

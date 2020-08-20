@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Form, Input, Button, notification } from "antd";
-import { DingtalkOutlined } from "@ant-design/icons";
+import { CommentOutlined } from "@ant-design/icons";
 import { signup } from "../util/ApiUtil";
 import "./Signup.css";
 
@@ -37,7 +37,7 @@ const Signup = (props) => {
 
   return (
     <div className="login-container">
-      <i class="fas fa-gamepad" style={{ fontSize: 50 }}></i>
+      <CommentOutlined style={{ fontSize: 50 }} />
       <Form
         name="normal_login"
         className="login-form"
