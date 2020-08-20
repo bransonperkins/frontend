@@ -37,7 +37,7 @@ const Signup = (props) => {
 
   return (
     <div className="login-container">
-      <CommentOutlined style={{ fontSize: 50 }} />
+      <CommentOutlined style={{ fontSize: 50, marginBottom: 10 }} />
       <Form
         name="normal_login"
         className="login-form"
