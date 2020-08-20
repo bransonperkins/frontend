@@ -37,7 +37,7 @@ const Signup = (props) => {
 
   return (
     <div className="login-container">
-      <DingtalkOutlined style={{ fontSize: 50 }} />
+      <i class="fas fa-gamepad" style={{ fontSize: 50 }}></i>
       <Form
         name="normal_login"
         className="login-form"
