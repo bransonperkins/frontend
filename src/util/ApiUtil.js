@@ -1,5 +1,5 @@
-const AUTH_SERVICE = "http://localhost:8081/";
-const CHAT_SERVICE = "http://localhost:8080/";
+const AUTH_SERVICE = "https://gaming-lounge-auth-svc.herokuapp.com/";
+const CHAT_SERVICE = "https://gaming-lounge-chat-svc.herokuapp.com/";
 
 const request = (options) => {
   const headers = new Headers();
