@@ -44,8 +44,8 @@ const Chat = (props) => {
   const connect = () => {
     const Stomp = require("stompjs");
     var SockJS = require("sockjs-client");
-    let socket = new SockJS("https://gaming-lounge-frontend.herokuapp.com/ws");
-    stompClient = Stomp.over(socket);
+    SockJS = new SockJS("https://gaming-lounge-chat-svc.herokuapp.com/ws");
+    stompClient = Stomp.over(SockJS);
     stompClient.connect({}, onConnected, onError);
   };
 
@@ -56,7 +56,6 @@ const Chat = (props) => {
       "/user/" + currentUser.id + "/queue/messages",
       onMessageReceived
     );
-    stompClient.setConnected(true);
   };
 
   const onError = (err) => {
