@@ -227,13 +227,19 @@ const Chat = (props) => {
                         }}
                       />
 
-                      <Button
+                    <button id="send" onClick={() => {
+                          sendMessage(text);
+                          setText("");
+                        }}>
+                      <i class="fa fa-paper-plane" aria-hidden="true"></i>{" "}
+                    </button>
+                      {/* <Button
                         icon={<i class="fa fa-paper-plane" aria-hidden="true"></i>}
                         onClick={() => {
                           sendMessage(text);
                           setText("");
                         }}
-                      />
+                      /> */}
                     </div>
                   </div>
                 </div>
