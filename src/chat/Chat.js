@@ -50,6 +50,7 @@ const Chat = (props) => {
   };
 
   const onConnected = () => {
+    setConnected(true);
     console.log("connected");
     console.log(currentUser);
     stompClient.subscribe(
