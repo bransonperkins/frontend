@@ -16,6 +16,7 @@ import ScrollToBottom from "react-scroll-to-bottom";
 import "./Chat.css";
 import App from "../spotify/App";
 import { Button, Container, Col, Row, Badge } from "reactstrap";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 var stompClient = null;
 const Chat = (props) => {
